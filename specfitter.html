@@ -3,7 +3,7 @@
 <head><meta
 charset="utf-8"><meta
 name="viewport" content="width=device-width, initial-scale=1">
-<title>jf3 Spectrum Viewer</title>
+<title>SpecFitter</title>
 <style type="text/css">body{margin:40px
 auto;max-width:800px;line-height:1.6;font-size:18px;color:#444;padding:0
 10px}h1,h2,h3{line-height:1.2}</style>
@@ -13,15 +13,15 @@ auto;max-width:800px;line-height:1.6;font-size:18px;color:#444;padding:0
 <!--Dat header-->
 :: <a href="index.html">Home</a> | <a href="papers.html">Publications</a> | <a href="code.html">Code</a> <br>
 
-<h1 id="-jf3-"><strong>jf3</strong></h1>
+<h1 id="-jf3-"><strong>SpecFitter</strong></h1>
 <p><strong>A spectroscopy tool in GTK3</strong></p>
 
 <p>A spectrum viewer and fitter app, suitable for gamma-ray spectroscopy or similar work.  Uses <a href="https://www.gtk.org/">GTK</a> to provide smooth rendering and (hopefully) an easy to understand interface.</p>
 
-Download the latest source code <a href="https://github.com/e-j-w/jf3/archive/master.zip">here</a>.
+Download the latest source code <a href="https://github.com/e-j-w/specfitter/archive/master.zip">here</a>.
 
 <h2 id="screenshot">Screenshot</h2>
-<p><img src="https://raw.githubusercontent.com/e-j-w/e-j-w.github.io/master/media/jf3.png" alt="jf3 user interface screenshot" title="jf3 user interface" style=height:500px;></p>
+<p><img src="https://raw.githubusercontent.com/e-j-w/e-j-w.github.io/master/media/specfitter.png" alt="SpecFitter user interface screenshot" title="SpecFitter user interface" style=height:500px;></p>
 
 <h2 id="features">Features</h2>
 <h3 id="display-data">Display data</h3>
@@ -66,7 +66,7 @@ Download the latest source code <a href="https://github.com/e-j-w/jf3/archive/ma
 <li><strong>.fmca</strong> - The same format as .mca except using floats rather than integers.</li>
 </ul>
 <h4 id="format-support-notes">Format support notes</h4>
-<p>Some sample files that the program can open are available <a href="https://raw.githubusercontent.com/e-j-w/e-j-w.github.io/master/media/jf3-sample-files.zip">here</a> (.zip archive).</p>
+<p>Some sample files that the program can open are available <a href="https://raw.githubusercontent.com/e-j-w/e-j-w.github.io/master/media/specfitter-sample-files.zip">here</a> (.zip archive).</p>
 <p>Conversion codes for some of the above data formats are available in the <a href="https://github.com/e-j-w/FileConvTools">FileConvTools</a> code repository.</p>
 
 <h2 id="getting-started">Getting started</h2>
@@ -90,16 +90,16 @@ Download the latest source code <a href="https://github.com/e-j-w/jf3/archive/ma
 <h3 id="build-instructions">Build instructions</h3>
 <p>A Makefile is provided, build the program using:</p>
 <pre><code>make</code></pre>
-The resulting `jf3` <span class="hljs-built_in">executable</span> can <span class="hljs-keyword">be</span> run directly from the <span class="hljs-keyword">command</span> <span class="hljs-built_in">line</span> <span class="hljs-built_in">or</span> your <span class="hljs-keyword">file</span> manager.  Optionally, the program can <span class="hljs-keyword">be</span> installed <span class="hljs-keyword">for</span> <span class="hljs-keyword">all</span> users with:
+The resulting `specfitter` <span class="hljs-built_in">executable</span> can <span class="hljs-keyword">be</span> run directly from the <span class="hljs-keyword">command</span> <span class="hljs-built_in">line</span> <span class="hljs-built_in">or</span> your <span class="hljs-keyword">file</span> manager.  Optionally, the program can <span class="hljs-keyword">be</span> installed <span class="hljs-keyword">for</span> <span class="hljs-keyword">all</span> users with:
 
 <pre><code>sudo make install</code></pre>
-<p>This will place the <code>jf3</code> binary in <code>/usr/bin</code>, a data-type definition file in <code>/usr/share/mime/packages</code> (to allow opening compatible files directly from the file manager), and a desktop entry file in <code>/usr/share/applications</code> (for desktop environment integration).  These changes can be undone with:</p>
+<p>This will place the <code>specfitter</code> binary in <code>/usr/bin</code>, a data-type definition file in <code>/usr/share/mime/packages</code> (to allow opening compatible files directly from the file manager), and a desktop entry file in <code>/usr/share/applications</code> (for desktop environment integration).  These changes can be undone with:</p>
 <p><code>sudo make uninstall</code></p>
 
 <h2 id="usage-tips">Usage tips</h2>
 <ul>
-<li>Preferences are stored in a plaintext configuration file on a per-user basis at <code>$HOME/.config/jf3/jf3.conf</code>.</li>
-<li>When running the program from the command line, it is possible to automatically open files by specifying the filename(s) as arguments (eg. <code>jf3 /path/to/file1 /path/to/file2</code>).</li>
+<li>Preferences are stored in a plaintext configuration file on a per-user basis at <code>$HOME/.config/specfitter/specfitter.conf</code>.</li>
+<li>When running the program from the command line, it is possible to automatically open files by specifying the filename(s) as arguments (eg. <code>specfitter /path/to/file1 /path/to/file2</code>).</li>
 <li>After fitting a spectrum, the onscreen fit can be cleared using the right mouse button.</li>
 </ul>
 
