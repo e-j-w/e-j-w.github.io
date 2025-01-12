@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tr$
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta
+charset="utf-8"><meta
+name="viewport" content="width=device-width, initial-scale=1">
+<title>Chart of Nuclides</title>
+<style type="text/css">body{margin:40px
+auto;max-width:800px;line-height:1.6;font-size:18px;color:#444;padding:0
+10px}h1,h2,h3{line-height:1.2}</style>
+</head>
+<body>
+
+<!--Dat header-->
+:: <a href="index.html">Home</a> | <a href="papers.html">Publications</a> | <a href="code.html">Code</a> <br>
+
+
+<h1 align="center"><strong>Chart of Nuclides</strong></h1>
+
+<p>An offline viewer of isotope and nuclear structure data in the <a href="https://en.wikipedia.org/wiki/Table_of_nuclides">Chart of Nuclides / Segrè chart</a> format. Uses nuclear structure data from <a href="https://www.nndc.bnl.gov/ensdf/about.jsp">ENSDF</a> and isotopic abundance data from <a href="https://www.nist.gov/pml/atomic-weights-and-isotopic-compositions-relative-atomic-masses">NIST</a>. A full list of features is <a href="https://github.com/e-j-w/ChartOfNuclides/blob/master/doc/FEATURES.md">here</a>.</p>
+<h2 id="screenshots">Screenshots</h2>
+<div align = center><img src="https://github.com/e-j-w/ChartOfNuclides-flatpak/blob/e439f2caf5547e928186a42330e6cc07dea57bc5/assets/con_screenshot.png?raw=true" width="188" height="124" alt="main interface"><img src="https://github.com/e-j-w/ChartOfNuclides-flatpak/blob/e439f2caf5547e928186a42330e6cc07dea57bc5/assets/con_screenshot2.png?raw=true" width="188" height="124" alt="zoomed in interface"><img src="https://github.com/e-j-w/ChartOfNuclides-flatpak/blob/e439f2caf5547e928186a42330e6cc07dea57bc5/assets/con_screenshot3.png?raw=true" width="188" height="124" alt="level list view"><img src="https://github.com/e-j-w/ChartOfNuclides-flatpak/blob/e439f2caf5547e928186a42330e6cc07dea57bc5/assets/con_screenshot4.png?raw=true" width="188" height="124" alt="alternate color scheme view"></div>
+
+<h2 id="downloads">Downloads</h2>
+<p>Only Linux is supported for now.<br>Get the latest <a href="https://github.com/e-j-w/ChartOfNuclides/releases">release</a> and follow the installation instructions there.</p>
+
+<p>Alternatively, the application can be built from source using the instructions <a href="https://github.com/e-j-w/ChartOfNuclides/blob/master/doc/BUILDING.md">here</a>.</p>
+
+<h2 id="using-the-program">Using the program</h2>
+<p>Zoom and pan with the mouse, the controls are basically identical to Google Maps.</p>
+<h3 id="keyboard-shortcuts">Keyboard shortcuts</h3>
+<p>This program is also designed to be fully navigable with a keyboard.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Arrow keys</td>
+<td style="text-align:left">Pan chart view, navigate menus</td>
+</tr>
+<tr>
+<td style="text-align:left">W / A / S / D</td>
+<td style="text-align:left">Pan selected nuclide (in chart and level list views)</td>
+</tr>
+<tr>
+<td style="text-align:left">+ / -</td>
+<td style="text-align:left">Zoom in/out on chart</td>
+</tr>
+<tr>
+<td style="text-align:left">] / [</td>
+<td style="text-align:left">Cycle between view modes for the chart (half-life, 2+ energy, etc.)</td>
+</tr>
+<tr>
+<td style="text-align:left">Enter</td>
+<td style="text-align:left">Select menu items</td>
+</tr>
+<tr>
+<td style="text-align:left">Alt</td>
+<td style="text-align:left">Open menu</td>
+</tr>
+<tr>
+<td style="text-align:left">Escape / backspace  </td>
+<td style="text-align:left">Exit out of open menus, cancel selection, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+F</td>
+<td style="text-align:left">Search</td>
+</tr>
+<tr>
+<td style="text-align:left">F11</td>
+<td style="text-align:left">Toggle fullscreen mode</td>
+</tr>
+<tr>
+<td style="text-align:left">P</td>
+<td style="text-align:left">Toggle performance stats debug overlay</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+Q</td>
+<td style="text-align:left">Quit application</td>
+</tr>
+</tbody>
+</table>
+<h2 id="credits">Credits</h2>
+<p>Developed and maintained by <a href="https://e-j-w.github.io/">Jonathan Williams</a>.</p>
+<p>A slightly modified version of the <a href="https://github.com/grimfang4/SDL_FontCache">SDL_FontCache</a> library by Jonathan Dearborn is used for fast text rendering.</p>
+<p>The font used in this program (<code>data/font.ttf</code>) is a modified version of <a href="https://github.com/KDE/oxygen-fonts">Oxygen</a> with some additional unicode glyphs from <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>.  Both fonts are made available under the <a href="https://openfontlicense.org/">Open Font License</a> (as described <a href="https://fonts.google.com/specimen/Oxygen/about">here</a> and <a href="https://fonts.google.com/noto/specimen/Noto+Sans/about">here</a>).</p>
+
+
+<!--Congratulations, you discovered the comment!-->
+<!--Check out my Responsive Design(TM)-->
+
+</body>
+</html>
