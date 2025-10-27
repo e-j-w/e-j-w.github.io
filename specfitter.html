@@ -68,15 +68,11 @@ auto;max-width:800px;line-height:1.6;font-size:18px;color:#444;padding:0
 </ul>
 <h4 id="format-support-notes">Format support notes</h4>
 <p>Some sample files that the program can open are available <a href="https://raw.githubusercontent.com/e-j-w/e-j-w.github.io/master/media/specfitter-sample-files.zip">here</a> (.zip archive).</p>
-<p>Conversion code I made some films with friends during high school and in the decade or so after. I've backed up the master copies of the ones I have:
-  Night Witness (2018)
-  A feature length horror film.
-  
-  s for some of the above data formats are available in the <a href="https://github.com/e-j-w/FileConvTools">FileConvTools</a> code repository.</p>
+<p>Conversion codes for some of the above data formats are available in the <a href="https://github.com/e-j-w/FileConvTools">FileConvTools</a> code repository.</p>
 
 <h2 id="getting-started">Getting started</h2>
 <h3 id="compatibility">Compatibility</h3>
-<p>Building the program from source has been tested on CentOS 7, Ubuntu 18.04/20.04, and Arch Linux (as of December 2021) under the GNOME desktop environment.  It should work on any Linux distro that satisfies the listed build dependencies.  It may be possible to build this on other platforms where GTK is <a href="https://www.gtk.org/docs/installations/">available</a>, but that hasn&#39;t been tested.</p>
+<p align="justify">Building the program from source has been tested on CentOS 7, Ubuntu 18.04/20.04, and Arch Linux (as of December 2021) under the GNOME desktop environment.  It should work on any Linux distro that satisfies the listed build dependencies.  It may be possible to build this on other platforms where GTK is <a href="https://www.gtk.org/docs/installations/">available</a>, but that hasn&#39;t been tested.</p>
 <h3 id="build-dependencies">Build dependencies</h3>
 <ul>
 <li>make</li>
@@ -98,7 +94,7 @@ auto;max-width:800px;line-height:1.6;font-size:18px;color:#444;padding:0
 The resulting `specfitter` <span class="hljs-built_in">executable</span> can <span class="hljs-keyword">be</span> run directly from the <span class="hljs-keyword">command</span> <span class="hljs-built_in">line</span> <span class="hljs-built_in">or</span> your <span class="hljs-keyword">file</span> manager.  Optionally, the program can <span class="hljs-keyword">be</span> installed <span class="hljs-keyword">for</span> <span class="hljs-keyword">all</span> users with:
 
 <pre><code>sudo make install</code></pre>
-<p>This will place the <code>specfitter</code> binary in <code>/usr/bin</code>, a data-type definition file in <code>/usr/share/mime/packages</code> (to allow opening compatible files directly from the file manager), and a desktop entry file in <code>/usr/share/applications</code> (for desktop environment integration).  These changes can be undone with:</p>
+<p align="justify">This will place the <code>specfitter</code> binary in <code>/usr/bin</code>, a data-type definition file in <code>/usr/share/mime/packages</code> (to allow opening compatible files directly from the file manager), and a desktop entry file in <code>/usr/share/applications</code> (for desktop environment integration).  These changes can be undone with:</p>
 <p><code>sudo make uninstall</code></p>
 
 <h2 id="usage-tips">Usage tips</h2>
